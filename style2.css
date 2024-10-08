@@ -1,0 +1,32 @@
+body{
+  background-color: #888;
+}
+
+.album {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.album img {
+  width: 120px;
+  height: 200px;
+  margin: 30px;
+  border: 3px solid #ddd;
+  border-radius: 5px;
+}
+
+img:hover {
+  transform: scale(1.5); /* Aumenta a imagem em 20% */
+  transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+@media (max-width: 768px) {
+  /* Estilos para telas com largura máxima de 768 pixels */
+  .container {
+    width: 90%;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+}

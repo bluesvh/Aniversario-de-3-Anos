@@ -1,0 +1,78 @@
+body {
+  display: flex; /* Utiliza Flexbox para centralizar o conteúdo */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  background-color: #484d50;
+}
+
+.container {
+  max-width: 800px; /* Define uma largura máxima para o container */
+  margin: 0 auto; /* Centraliza o container na página */
+  padding: 20px;
+  background-color: #fff; /* Cor de fundo branca para o container */
+  border-radius: 10px; /* Adiciona cantos arredondados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra para destacar o container */
+}
+
+/* Resto do seu CSS */
+h1 {
+font-size: 36px;
+text-align: center;
+}
+  
+p {
+font-size: 20px;
+text-align: justify;
+text-indent: 2em;
+}
+  
+.texto-destaque {
+background-color: #e0e0e0;
+padding: 20px;
+border-radius: 5px;
+}
+  
+h2 {
+color: black;
+text-align: center;
+font-size: 30px;
+} 
+
+/* Estiliza a barra de rolagem */
+::-webkit-scrollbar {
+  width: 5px; /* Largura da barra */
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: #888;
+}
+
+/* Parte móvel da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
+.musicas{
+  a {
+    text-decoration: none;
+    color: white; /* Define a cor do texto do link */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Estilos para telas com largura máxima de 768 pixels */
+  .container {
+    width: 90%;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+}
